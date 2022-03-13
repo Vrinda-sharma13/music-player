@@ -1,0 +1,81 @@
+/* Code For popular artist Div */
+.popular_artist {
+  width: 99%;
+  min-height: 200px;
+}
+
+.artist_box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.artist_box .img {
+  width: 150px;
+  height: 200px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.artist_box .img .img1:hover,
+.img2:hover,
+.img3:hover,
+.img4:hover,
+.img5:hover,
+.img6:hover {
+  border: 2.3px solid silver;
+  transform: scale(0.9);
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6 {
+  width: 100%;
+  height: 150px;
+  border-radius: 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s ease-in-out;
+}
+
+.img1 {
+  background-image: url("./assests/popularArtist/ed_sheeran.jpg");
+}
+
+.img2 {
+  background-image: url("./assests/popularArtist/cold_play.jpg");
+}
+
+.img3 {
+  background-image: url("./assests/popularArtist/zayn.jpg");
+}
+
+.img4 {
+  background-image: url("./assests/popularArtist/charlie_puth.jpg");
+}
+
+.img5 {
+  background-image: url("./assests/popularArtist/imagine-dragons.jpg");
+}
+
+.img6 {
+  background-image: url("./assests/popularArtist/burno_mars.jpg");
+}
+
+.singer_name {
+  color: var(--colorWhite);
+  text-align: center;
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: bolder;
+}

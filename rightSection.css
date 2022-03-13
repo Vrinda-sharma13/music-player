@@ -1,0 +1,167 @@
+/* Code for CSS of aside section in index.html */
+.queue_top_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page__sidebar__topbar {
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.sidebar__title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.sidebar__dropdown {
+  font-size: 13px;
+  color: cyan;
+  cursor: pointer;
+  width: 100px;
+  height: 31px;
+  position: relative;
+  user-select: none;
+}
+.sidebar__dropdown > label {
+  color: aqua;
+  cursor: pointer;
+  font-weight: 900;
+}
+#queue-dropdown {
+  background-color: var(--colorWhite);
+  position: absolute;
+  transition: 0.2s ease-in-out;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  top: 31px;
+  right: 70px;
+  -webkit-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: auto;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+.sidebar__dropdown > input:checked ~ #queue-dropdown {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  width: 200px;
+  height: 100px;
+}
+
+.dropdown__list {
+  list-style: none;
+}
+.dropdown__list > li {
+  text-align: center;
+  color: white;
+  padding: 1rem 0;
+  border-bottom: 1px solid white;
+  text-transform: capitalize;
+  font-weight: 900;
+}
+
+.right_song {
+  box-sizing: border-box;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 4rem 0 1.5rem;
+}
+
+.right_song_left_section {
+  display: flex;
+  align-items: center;
+}
+
+.image_right_song {
+  width: 45px;
+  height: 45px;
+  background-image: url("./assests/rightSection/song_image.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: transparent;
+  border-radius: 8px;
+  background-color: transparent;
+  transition: 1s ease-in-out;
+}
+
+.image_right_song::before {
+  width: 45px;
+  height: 45px;
+  color: transparent;
+  border-radius: 8px;
+  background-color: transparent;
+  content: ">";
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.image_right_song:hover {
+  transform: scale(1.2);
+}
+
+.image_right_song:hover::before {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--colorWhite);
+}
+
+.number {
+  margin-right: 0.8rem;
+}
+
+.right_song img {
+  width: 40px;
+  border-radius: 3px;
+  margin-right: 0.9rem;
+  box-shadow: -0px -0px 5px 0.5px var(--colorWhite);
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.right_song img:hover {
+  transform: scale(1.1);
+}
+
+.fa-heart {
+  cursor: pointer;
+}
+
+.fa-heart:hover {
+  color: red;
+}
+
+.number,
+.span2 {
+  color: grey;
+  font-weight: 600;
+}
+
+.span1 {
+  font-size: 20px;
+  font-weight: bold;
+}

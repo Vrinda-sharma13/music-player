@@ -1,0 +1,80 @@
+/* Code For Navbar is included in this section */
+.navbar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--colorWhite);
+  padding-top: 15px;
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+  padding-left: 8px;
+}
+
+.company_name {
+  flex: 1;
+  margin-left: 8px;
+}
+
+.fovorite {
+  flex: 9;
+  padding-left: 10px;
+}
+
+.ninja,
+.fovorite {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.bold {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.searchbar {
+  background-color: var(--transparentMainColor);
+  border-radius: 8px;
+  height: 35px;
+  padding: 0px 8px 0px;
+}
+
+.serach_menu {
+  background-color: var(--transparentMainColor);
+  border: none;
+  color: var(--colorWhite);
+}
+.serach_menu,
+.searchbar i {
+  position: relative;
+  top: 7px;
+}
+
+.serach_menu:focus {
+  outline: none;
+}
+
+.fa-search {
+  font-size: 15px;
+}
+
+.bell {
+  font-size: 16px;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.searchbar,
+.bell,
+.profile {
+  margin-right: 20px;
+}

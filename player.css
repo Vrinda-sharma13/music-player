@@ -1,0 +1,105 @@
+/* This Is code for music player when we click on any Popular Artist div */
+.player {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  background-color: var(--playerColor);
+  position: fixed;
+  z-index: 3;
+  top: 87%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.playerbox:nth-child(1),
+.playerbox:nth-child(3) {
+  width: 250px;
+  height: 88%;
+}
+
+.playerbox:nth-child(2) {
+  width: 550px;
+  height: 88%;
+}
+
+#show_player:target {
+  width: 100%;
+  height: 100px;
+  transition: all 1s ease-in-out;
+}
+
+.playerbox:nth-child(1) {
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.playerbox:nth-child(1) div {
+  margin: 5px;
+}
+
+.playerImage {
+  background-image: url("./assests/player/player_image.jpg");
+  height: 70px;
+  width: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+}
+
+.playerSongName marquee,
+p {
+  width: 80%;
+  font-weight: bolder;
+}
+
+.playerSongName marquee {
+  color: var(--colorWhite);
+  font-size: 18px;
+  text-shadow: 5px 1px 10px white;
+}
+
+.playerSongName p {
+  color: gray;
+  font-size: 12px;
+}
+
+.playerHeart,
+.playerCross a {
+  color: var(--colorWhite);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.playerbox:nth-child(3) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.small-icon {
+  color: var(--colorWhite);
+}
+
+.icon {
+  color: var(--colorWhite);
+}
+
+.playerBox1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.playerBox1 .icon {
+  margin: 0px 20px;
+  font-size: 20px;
+}
+
+.playerBox2 input {
+  width: 90%;
+  margin: 10px 0px 0px 20px;
+}

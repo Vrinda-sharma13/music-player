@@ -1,0 +1,31 @@
+/* All the common properties of second Page are included here */
+
+* {
+  margin: 0px;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
+:root {
+  --mainColor: #0c1027;
+  --transparentMainColor: #3a3661;
+  --colorWhite: white;
+  --playerColor: rgb(56, 55, 55);
+}
+
+body {
+  background-color: var(--mainColor);
+  color: var(--colorWhite);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,55 @@
+/* This Fill is main css for index.html */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
+:root {
+  --mainColor: #0c1027;
+  --transparentMainColor: #3a3661;
+  --colorWhite: white;
+  --playerColor: rgb(56, 55, 55);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--mainColor);
+}
+
+a {
+  color: var(--colorWhite);
+}
+
+.main {
+  width: 100%;
+  height: 753px;
+  background-color: var(--mainColor);
+}
+
+.main_body {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.left_section {
+  position: absolute;
+  width: 70%;
+  height: auto;
+  /* overflow: auto; */
+  background-color: var(--mainColor);
+}
+
+.right_section {
+  width: 30%;
+  height: 900px;
+  position: absolute;
+  left: 70%;
+  /* overflow: auto; */
+  background-color: var(--mainColor);
+  color: var(--colorWhite);
+  padding-top: 20px;
+}

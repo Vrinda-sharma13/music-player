@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <!-- All My Css Files -->
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="stylesheet" href="./mediaQureis.css" />
+    <link rel="stylesheet" href="./leftSection.css" />
+    <link rel="stylesheet" href="./rightSection.css" />
+    <link rel="stylesheet" href="./popularArtist.css" />
+    <link rel="stylesheet" href="./stationBox.css" />
+    <link rel="stylesheet" href="./latest.css" />
+    <link rel="stylesheet" href="./type.css" />
+    <link rel="stylesheet" href="./annimate.css" />
+    <link rel="stylesheet" href="./player.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <meta name="keywords" content="Music, Songs, Ninja" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Jessica Gulati" />
+  </head>
+
+  <body>
+    <!-- Fulll screen Div -->
+    <div class="main">
+      <!-- Dive For Navbar -->
+      <div class="navbar">
+        <div class="logo">
+          <img
+            src="./assests/navbar/logo.png"
+            alt="music logo"
+          />
+        </div>
+
+        <div class="company_name">
+          <span class="ninja">Ninja</span><br />
+          <span class="bold">Studio</span>
+        </div>
+
+        <div class="fovorite">Favourites</div>
+
+        <div class="searchbar">
+          <i class="fas fa-search"></i>
+          <input
+            class="serach_menu"
+            type="text"
+            placeholder="Search"
+            name="serachbar"
+          />
+          <i class="fas fa-microphone"></i>
+        </div>
+
+        <div class="bell">
+          <i class="fas fa-bell"></i>
+        </div>
+
+        <div class="profile">
+          <img
+            src="./assests/navbar/profile_image.jpg"
+            alt="profile"
+          />
+        </div>
+      </div>
+
+      <!-- Player Div -->
+      <div id="show_player" class="player">
+        <!-- Song Name Div -->
+        <div class="playerbox">
+          <div class="playerImage"></div>
+          <div class="playerSongName">
+            <marquee class="name1">Imagine By John Lennon</marquee>
+            <p class="name2">John Lennon</p>
+          </div>
+          <div class="playerHeart">
+            <i class="far fa-heart"></i>
+          </div>
+          <div class="palyerCross">
+            <a href="#"><i class="far fa-times-circle"></i></a>
+          </div>
+        </div>
+
+        <!-- Sond Details Div  -->
+        <div class="playerbox">
+          <div class="playerBox1">
+            <div class="icon"><i class="fas fa-random"></i></div>
+            <div class="icon"><i class="fas fa-backward"></i></div>
+            <div class="icon"><i class="far fa-pause-circle"></i></div>
+            <div class="icon"><i class="fas fa-forward"></i></div>
+            <div class="icon"><i class="fas fa-repeat"></i></div>
+          </div>
+          <div class="playerBox2">
+            <input type="range" min="0" max="200" step="1" />
+          </div>
+        </div>
+
+        <!-- Volume and other options for song -->
+        <div class="playerbox lastSection">
+          <div class="small-icon"><i class="fas fa-music"></i></div>
+          <div class="small-icon"><i class="fas fa-laptop"></i></div>
+          <div class="small-icon"><i class="fas fa-volume-down"></i></div>
+          <div class="volume">
+            <input min="0" max="100" step="1" type="range" />
+          </div>
+          <div class="small-icon"><i class="fas fa-expand-alt"></i></div>
+        </div>
+      </div>
+      <div class="main_body">
+        <!-- Left Side Of Main Body -->
+        <section class="left_section">
+          <div class="header_images">
+            <div class="image1"></div>
+            <div class="image2"></div>
+            <div class="image3"></div>
+          </div>
+
+          <!-- Latest Release Box -->
+          <!-- I have Copied Same div many time So move to line number Around 565 -->
+          <div class="latest_release">
+            <h3 class="headings">Latest Release</h3>
+            <div class="page__latest__release">
+              <div class="latest__release__album">
+                <a href="#show_player" class="album__image"></a>
+                <div class="album__details">
+                  <p class="album__title">onism</p>
+                  <p class="album__release">Aug 11,2017</p>
+                </div>
+                <div class="album__duration">
+                  <input
+                    type="checkbox"
+                    name="three-dots-checkbox"
+                    id="latest-release-checkbox-1"
+                  />
+                  <label for="latest-release-checkbox-1"
+                    ><i class="fas fa-ellipsis-h"></i
+                  ></label>
+                  <p class="album__duration__current">4:44</p>
+                  <div
+                    id="latest-release-dropdown-1"
+                    class="latest-release-dropdown"
+                  >
+                    <ul>
+                      <li><i class="fas fa-play"></i>Play Now</li>
+                      <li><i class="fas fa-plus"></i>Add to Queue</li>
+                      <li>
+                        <i class="fas fa-align-justify"></i>Add to Favorite
+                      </li>
+                      <li><i class="fas fa-info-circle"></i>Get Info</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="latest__release__album">
+                <a href="#show_player" class="album__image"></a>
+                <div class="album__details">
+                  <p class="album__title">onism</p>
+                  <p class="album__release">Aug 11,2017</p>
+                </div>
+                <div class="album__duration">
+                  <input
+                    type="checkbox"
+                    name="three-dots-checkbox"
+                    id="latest-release-checkbox-2"
+                    class="latest-release-dropdown"
+                  />
+                  <label for="latest-release-checkbox-2"
+                    ><i class="fas fa-ellipsis-h"></i
+                  ></label>
+                  <p class="album__duration__current">4:44</p>
+                  <div
+                    id="latest-release-dropdown-2"
+                    class="latest-release-dropdown"
+                  >
+                    <ul>
+                      <li><i class="fas fa-play"></i>Play Now</li>
+                      <li><i class="fas fa-plus"></i>Add to Queue</li>
+                      <li>
+                        <i class="fas fa-align-justify"></i>Add to Favorite
+                      </li>
+                      <li><i class="fas fa-info-circle"></i>Get Info</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="latest__release__album">
+                <a href="#show_player" class="album__image"></a>
+                <div class="album__details">
+                  <p class="album__title">onism</p>
+                  <p class="album__release">Aug 11,2017</p>
+                </div>
+                <div class="album__duration">
+                  <input
+                    type="checkbox"
+                    name="three-dots-checkbox"
+                    id="latest-release-checkbox-3"
+                  />
+                  <label for="latest-release-checkbox-3"
+                    ><i class="fas fa-ellipsis-h"></i
+                  ></label>
+                  <p class="album__duration__current">4:44</p>
+                  <div
+                    id="latest-release-dropdown-3"
+                    class="latest-release-dropdown"
+                  >
+                    <ul>
+                      <li><i class="fas fa-play"></i>Play Now</li>
+                      <li><i class="fas fa-plus"></i>Add to Queue</li>
+                      <li>
+                        <i class="fas fa-align-justify"></i>Add to Favorite
+                      </li>
+                      <li><i class="fas fa-info-circle"></i>Get Info</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="latest__release__album">
+                <a href="#show_player" class="album__image"></a>
+                <div class="album__details">
+                  <p class="album__title">onism</p>
+                  <p class="album__release">Aug 11,2017</p>
+                </div>
+                <div class="album__duration">
+                  <input
+                    type="checkbox"
+                    name="three-dots-checkbox"
+                    id="latest-release-checkbox-4"
+                  />
+                  <label for="latest-release-checkbox-4"
+                    ><i class="fas fa-ellipsis-h"></i
+                  ></label>
+                  <p class="album__duration__current">4:44</p>
+                  <div
+                    id="latest-release-dropdown-4"
+                    class="latest-release-dropdown"
+                  >
+                    <ul>
+                      <li><i class="fas fa-play"></i>Play Now</li>
+                      <li><i class="fas fa-plus"></i>Add to Queue</li>
+                      <li>
+                        <i class="fas fa-align-justify"></i>Add to Favorite
+                      </li>
+                      <li><i class="fas fa-info-circle"></i>Get Info</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="latest__release__album">
+                <a href="#show_player" class="album__image"></a>
+                <div class="album__details">
+                  <p class="album__title">onism</p>
+                  <p class="album__release">Aug 11,2017</p>
+                </div>
+                <div class="album__duration">
+                  <input
+                    type="checkbox"
+                    name="three-dots-checkbox"
+                    id="latest-release-checkbox-5"
+                  />
+                  <label for="latest-release-checkbox-5"
+                    ><i class="fas fa-ellipsis-h"></i
+                  ></label>
+                  <p class="album__duration__current">4:44</p>
+                  <div
+                    id="latest-release-dropdown-5"
+                    class="latest-release-dropdown"
+                  >
+                    <ul>
+                      <li><i class="fas fa-play"></i>Play Now</li>
+                      <li><i class="fas fa-plus"></i>Add to Queue</li>
+                      <li>
+                        <i class="fas fa-align-justify"></i>Add to Favorite
+                      </li>
+                      <li><i class="fas fa-info-circle"></i>Get Info</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="latest__release__album">
+                <a href="#show_player" class="album__image"></a>
+                <div class="album__details">
+                  <p class="album__title">onism</p>
+                  <p class="album__release">Aug 11,2017</p>
+                </div>
+                <div class="album__duration">
+                  <input
+                    type="checkbox"
+                    name="three-dots-checkbox"
+                    id="latest-release-checkbox-6"
+                  />
+                  <label for="latest-release-checkbox-6"
+                    ><i class="fas fa-ellipsis-h"></i
+                  ></label>
+                  <p class="album__duration__current">4:44</p>
+                  <div
+                    id="latest-release-dropdown-6"
+                    class="latest-release-dropdown"
+                  >
+                    <ul>
+                      <li><i class="fas fa-play"></i>Play Now</li>
+                      <li><i class="fas fa-plus"></i>Add to Queue</li>
+                      <li>
+                        <i class="fas fa-align-justify"></i>Add to Favorite
+                      </li>
+                      <li><i class="fas fa-info-circle"></i>Get Info</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="latest__release__album">
+                <a href="#show_player" class="album__image"></a>
+                <div class="album__details">
+                  <p class="album__title">onism</p>
+                  <p class="album__release">Aug 11,2017</p>
+                </div>
+                <div class="album__duration">
+                  <input
+                    type="checkbox"
+                    name="three-dots-checkbox"
+                    id="latest-release-checkbox-7"
+                  />
+                  <label for="latest-release-checkbox-7"
+                    ><i class="fas fa-ellipsis-h"></i
+                  ></label>
+                  <p class="album__duration__current">4:44</p>
+                  <div
+                    id="latest-release-dropdown-7"
+                    class="latest-release-dropdown"
+                  >
+                    <ul>
+                      <li><i class="fas fa-play"></i>Play Now</li>
+                      <li><i class="fas fa-plus"></i>Add to Queue</li>
+                      <li>
+                        <i class="fas fa-align-justify"></i>Add to Favorite
+                      </li>
+                      <li><i class="fas fa-info-circle"></i>Get Info</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="latest__release__album">
+                <a href="#show_player" class="album__image"></a>
+                <div class="album__details">
+                  <p class="album__title">onism</p>
+                  <p class="album__release">Aug 11,2017</p>
+                </div>
+                <div class="album__duration">
+                  <input
+                    type="checkbox"
+                    name="three-dots-checkbox"
+                    id="latest-release-checkbox-8"
+                  />
+                  <label for="latest-release-checkbox-8"
+                    ><i class="fas fa-ellipsis-h"></i
+                  ></label>
+                  <p class="album__duration__current">4:44</p>
+                  <div
+                    id="latest-release-dropdown-8"
+                    class="latest-release-dropdown"
+                  >
+                    <ul>
+                      <li><i class="fas fa-play"></i>Play Now</li>
+                      <li><i class="fas fa-plus"></i>Add to Queue</li>
+                      <li>
+                        <i class="fas fa-align-justify"></i>Add to Favorite
+                      </li>
+                      <li><i class="fas fa-info-circle"></i>Get Info</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="latest__release__album">
+                <a href="#show_player" class="album__image"></a>
+                <div class="album__details">
+                  <p class="album__title">onism</p>
+                  <p class="album__release">Aug 11,2017</p>
+                </div>
+                <div class="album__duration">
+                  <input
+                    type="checkbox"
+                    name="three-dots-checkbox"
+                    id="latest-release-checkbox-9"
+                  />
+                  <label for="latest-release-checkbox-9"
+                    ><i class="fas fa-ellipsis-h"></i
+                  ></label>
+                  <p class="album__duration__current">4:44</p>
+                  <div
+                    id="latest-release-dropdown-9"
+                    class="latest-release-dropdown"
+                  >
+                    <ul>
+                      <li><i class="fas fa-play"></i>Play Now</li>
+                      <li><i class="fas fa-plus"></i>Add to Queue</li>
+                      <li>
+                        <i class="fas fa-align-justify"></i>Add to Favorite
+                      </li>
+                      <li><i class="fas fa-info-circle"></i>Get Info</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="latest__release__album">
+                <a href="#show_player" class="album__image"></a>
+                <div class="album__details">
+                  <p class="album__title">onism</p>
+                  <p class="album__release">Aug 11,2017</p>
+                </div>
+                <div class="album__duration">
+                  <input
+                    type="checkbox"
+                    name="three-dots-checkbox"
+                    id="latest-release-checkbox-10"
+                  />
+                  <label for="latest-release-checkbox-10"
+                    ><i class="fas fa-ellipsis-h"></i
+                  ></label>
+                  <p class="album__duration__current">4:44</p>
+                  <div
+                    id="latest-release-dropdown-10"
+                    class="latest-release-dropdown"
+                  >
+                    <ul>
+                      <li><i class="fas fa-play"></i>Play Now</li>
+                      <li><i class="fas fa-plus"></i>Add to Queue</li>
+                      <li>
+                        <i class="fas fa-align-justify"></i>Add to Favorite
+                      </li>
+                      <li><i class="fas fa-info-circle"></i>Get Info</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="popular_artist">
+            <h3 class="headings">Popular Artist</h3>
+            <div class="artist_box">
+              <div class="img">
+                <a href="./secondPage.html" class="img1"></a>
+                <div class="singer_name">Ed Sheeran</div>
+              </div>
+              <div class="img">
+                <a href="./secondPage.html" class="img2"></a>
+                <div class="singer_name">ColdPlay</div>
+              </div>
+              <div class="img">
+                <a href="./secondPage.html" class="img3"></a>
+                <div class="singer_name">Zayn</div>
+              </div>
+              <div class="img">
+                <a href="./secondPage.html" class="img4"></a>
+                <div class="singer_name">Charlie Puth</div>
+              </div>
+              <div class="img">
+                <a href="./secondPage.html" class="img5"></a>
+                <div class="singer_name">Imagine Dragon</div>
+              </div>
+              <div class="img">
+                <a href="./secondPage.html" class="img6"></a>
+                <div class="singer_name">Bruno Mars</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="station_box">
+            <div class="test">
+              <div class="station_box_inner_box">Station</div>
+            </div>
+            <div class="station_box_inner_box">Love</div>
+            <div class="station_box_inner_box">Retro</div>
+            <div class="station_box_inner_box">Chill</div>
+            <div class="station_box_inner_box">Workout</div>
+            <div class="station_box_inner_box">Pop</div>
+            <div class="station_box_inner_box">Rock</div>
+          </div>
+
+          <div class="type">
+            <div class="type_box"></div>
+            <div class="type_box"></div>
+            <div class="type_box"></div>
+          </div>
+
+          <div class="latest_english">
+            <h3 class="headings">Latest English</h3>
+            <div class="latest">
+              <div class="latest_box">
+                <div class="latest_box_image latest_box_image1"></div>
+                <h3>Onism</h3>
+                <p>AUG 11, 2017</p>
+              </div>
+              <div class="latest_box">
+                <div class="latest_box_image latest_box_image2"></div>
+                <h3>Onism</h3>
+                <p>AUG 11, 2017</p>
+              </div>
+              <div class="latest_box">
+                <div class="latest_box_image latest_box_image3"></div>
+                <h3>Onism</h3>
+                <p>AUG 11, 2017</p>
+              </div>
+              <div class="latest_box">
+                <div class="latest_box_image latest_box_image4"></div>
+                <h3>Onism</h3>
+                <p>AUG 11, 2017</p>
+              </div>
+              <div class="latest_box">
+                <div class="latest_box_image latest_box_image5"></div>
+                <h3>Onism</h3>
+                <p>AUG 11, 2017</p>
+              </div>
+              <div class="latest_box">
+                <div class="latest_box_image latest_box_image6"></div>
+                <h3>Onism</h3>
+                <p>AUG 11, 2017</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="latest_hindi">
+            <h3 class="headings">Latest Hindi</h3>
+            <div class="latest">
+              <div class="latest_box">
+                <div class="latest_box_image latest_box_image1"></div>
+                <h3>Onism</h3>
+                <p>AUG 11, 2017</p>
+              </div>
+              <div class="latest_box">
+                <div class="latest_box_image latest_box_image2"></div>
+                <h3>Onism</h3>
+                <p>AUG 11, 2017</p>
+              </div>
+              <div class="latest_box">
+                <div class="latest_box_image latest_box_image3"></div>
+                <h3>Onism</h3>
+                <p>AUG 11, 2017</p>
+              </div>
+              <div class="latest_box">
+                <div class="latest_box_image latest_box_image4"></div>
+                <h3>Onism</h3>
+                <p>AUG 11, 2017</p>
+              </div>
+              <div class="latest_box">
+                <div class="latest_box_image latest_box_image5"></div>
+                <h3>Onism</h3>
+                <p>AUG 11, 2017</p>
+              </div>
+              <div class="latest_box">
+                <div class="latest_box_image latest_box_image6"></div>
+                <h3>Onism</h3>
+                <p>AUG 11, 2017</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Right Section of Main Div -->
+        <aside class="right_section">
+
+          <!-- Top Queue Heading -->
+          <div class="queue_top_bar">
+            <div>
+              <h1>Queue</h1>
+            </div>
+            <div class="page__sidebar__topbar">
+              <p class="sidebar__title"></p>
+              <div class="sidebar__dropdown">
+                <input type="checkbox" name="menu" id="checkbox-1" />
+                <label for="checkbox-1"
+                  >Queue <i class="fas fa-angle-down"></i
+                ></label>
+
+                <!-- Dropdown For Queue -->
+                <div id="queue-dropdown">
+                  <ul class="dropdown__list">
+                    <li>playlists</li>
+                    <li>featured songs</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Song Queue -->
+          <!-- I have copied same one Queue many times So move to line number 1012 -->
+          <div class="right_song">
+            <div class="right_song_left_section">
+              <div class="number">01</div>
+              <div class="image_right_song"></div>
+              <div class="right_song_name">
+                <span class="span1">Mirage</span><br />
+                <span class="span2">Else</span>
+              </div>
+            </div>
+            <div><i class="far fa-heart"></i></div>
+          </div>
+          <div class="right_song">
+            <div class="right_song_left_section">
+              <div class="number">01</div>
+              <div class="image_right_song"></div>
+              <div class="right_song_name">
+                <span class="span1">Mirage</span><br />
+                <span class="span2">Else</span>
+              </div>
+            </div>
+            <div><i class="far fa-heart"></i></div>
+          </div>
+
+          <div class="right_song">
+            <div class="right_song_left_section">
+              <div class="number">01</div>
+              <div class="image_right_song"></div>
+              <div class="right_song_name">
+                <span class="span1">Mirage</span><br />
+                <span class="span2">Else</span>
+              </div>
+            </div>
+            <div><i class="far fa-heart"></i></div>
+          </div>
+
+          <div class="right_song">
+            <div class="right_song_left_section">
+              <div class="number">01</div>
+              <div class="image_right_song"></div>
+              <div class="right_song_name">
+                <span class="span1">Mirage</span><br />
+                <span class="span2">Else</span>
+              </div>
+            </div>
+            <div><i class="far fa-heart"></i></div>
+          </div>
+
+          <div class="right_song">
+            <div class="right_song_left_section">
+              <div class="number">01</div>
+              <div class="image_right_song"></div>
+              <div class="right_song_name">
+                <span class="span1">Mirage</span><br />
+                <span class="span2">Else</span>
+              </div>
+            </div>
+            <div><i class="far fa-heart"></i></div>
+          </div>
+
+          <div class="right_song">
+            <div class="right_song_left_section">
+              <div class="number">01</div>
+              <div class="image_right_song"></div>
+              <div class="right_song_name">
+                <span class="span1">Mirage</span><br />
+                <span class="span2">Else</span>
+              </div>
+            </div>
+            <div><i class="far fa-heart"></i></div>
+          </div>
+
+          <div class="right_song">
+            <div class="right_song_left_section">
+              <div class="number">01</div>
+              <div class="image_right_song"></div>
+              <div class="right_song_name">
+                <span class="span1">Mirage</span><br />
+                <span class="span2">Else</span>
+              </div>
+            </div>
+            <div><i class="far fa-heart"></i></div>
+          </div>
+
+          <div class="right_song">
+            <div class="right_song_left_section">
+              <div class="number">01</div>
+              <div class="image_right_song"></div>
+              <div class="right_song_name">
+                <span class="span1">Mirage</span><br />
+                <span class="span2">Else</span>
+              </div>
+            </div>
+            <div><i class="far fa-heart"></i></div>
+          </div>
+
+          <div class="right_song">
+            <div class="right_song_left_section">
+              <div class="number">01</div>
+              <div class="image_right_song"></div>
+              <div class="right_song_name">
+                <span class="span1">Mirage</span><br />
+                <span class="span2">Else</span>
+              </div>
+            </div>
+            <div><i class="far fa-heart"></i></div>
+          </div>
+
+          <div class="right_song">
+            <div class="right_song_left_section">
+              <div class="number">01</div>
+              <div class="image_right_song"></div>
+              <div class="right_song_name">
+                <span class="span1">Mirage</span><br />
+                <span class="span2">Else</span>
+              </div>
+            </div>
+            <div><i class="far fa-heart"></i></div>
+          </div>
+
+          <div class="right_song">
+            <div class="right_song_left_section">
+              <div class="number">01</div>
+              <div class="image_right_song"></div>
+              <div class="right_song_name">
+                <span class="span1">Mirage</span><br />
+                <span class="span2">Else</span>
+              </div>
+            </div>
+            <div><i class="far fa-heart"></i></div>
+          </div>
+
+          <div class="right_song">
+            <div class="right_song_left_section">
+              <div class="number">01</div>
+              <div class="image_right_song"></div>
+              <div class="right_song_name">
+                <span class="span1">Mirage</span><br />
+                <span class="span2">Else</span>
+              </div>
+            </div>
+            <div><i class="far fa-heart"></i></div>
+          </div>
+
+          <div class="right_song">
+            <div class="right_song_left_section">
+              <div class="number">01</div>
+              <div class="image_right_song"></div>
+              <div class="right_song_name">
+                <span class="span1">Mirage</span><br />
+                <span class="span2">Else</span>
+              </div>
+            </div>
+            <div><i class="far fa-heart"></i></div>
+          </div>
+
+          <div class="right_song">
+            <div class="right_song_left_section">
+              <div class="number">01</div>
+              <div class="image_right_song"></div>
+              <div class="right_song_name">
+                <span class="span1">Mirage</span><br />
+                <span class="span2">Else</span>
+              </div>
+            </div>
+            <div><i class="far fa-heart"></i></div>
+          </div>
+
+          <div class="right_song">
+            <div class="right_song_left_section">
+              <div class="number">01</div>
+              <div class="image_right_song"></div>
+              <div class="right_song_name">
+                <span class="span1">Mirage</span><br />
+                <span class="span2">Else</span>
+              </div>
+            </div>
+            <div><i class="far fa-heart"></i></div>
+          </div>
+
+          <div class="right_song">
+            <div class="right_song_left_section">
+              <div class="number">01</div>
+              <div class="image_right_song"></div>
+              <div class="right_song_name">
+                <span class="span1">Mirage</span><br />
+                <span class="span2">Else</span>
+              </div>
+            </div>
+            <div><i class="far fa-heart"></i></div>
+          </div>
+
+          <div class="right_song">
+            <div class="right_song_left_section">
+              <div class="number">01</div>
+              <div class="image_right_song"></div>
+              <div class="right_song_name">
+                <span class="span1">Mirage</span><br />
+                <span class="span2">Else</span>
+              </div>
+            </div>
+            <div><i class="far fa-heart"></i></div>
+          </div>
+
+          <div class="right_song">
+            <div class="right_song_left_section">
+              <div class="number">01</div>
+              <div class="image_right_song"></div>
+              <div class="right_song_name">
+                <span class="span1">Mirage</span><br />
+                <span class="span2">Else</span>
+              </div>
+            </div>
+            <div><i class="far fa-heart"></i></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+/* All the Annimations are included in this file */
+.navbar .logo img {
+  animation: rotate360 0.8s ease-in-out infinite;
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.fa-bell {
+  animation: pendulum 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes pendulum {
+  0% {
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+.follow_box button:hover {
+  animation: bounce 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    margin-top: -10px;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}

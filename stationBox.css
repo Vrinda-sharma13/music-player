@@ -1,0 +1,64 @@
+/* Code for all the sation boxes like love, chill etc */
+.station_box {
+  width: 100%;
+  min-height: 185px;
+  background-color: var(--MainColor);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.station_box_inner_box {
+  width: 135px;
+  height: 135px;
+  border-radius: 120px;
+  margin: 10px 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--colorWhite);
+  font-weight: 900;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+
+.station_box_inner_box:hover {
+  transform: scale(1.1);
+}
+
+.station_box_inner_box:nth-child(1) {
+  background-image: url("./assests/station/stationImage.jpg");
+  filter: grayscale(40%);
+}
+
+.station_box_inner_box:nth-child(2) {
+  background-image: url("./assests/station/love.jpg");
+  filter: grayscale(80%);
+}
+
+.station_box_inner_box:nth-child(3) {
+  background-image: url("./assests/station/retro.jpg");
+  filter: saturate(60%);
+}
+
+.station_box_inner_box:nth-child(4) {
+  background-image: url("./assests/station/chill.jpg");
+  filter: brightness(50%);
+}
+
+.station_box_inner_box:nth-child(5) {
+  background-image: url("./assests/station/workout.jpg");
+}
+
+.station_box_inner_box:nth-child(6) {
+  background-image: url("./assests/station/pop.jpg");
+}
+
+.station_box_inner_box:nth-child(7) {
+  background-image: url("./assests/station/rock.jpg")
+}

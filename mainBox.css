@@ -1,0 +1,245 @@
+/* code for main Div Of second Page */
+.main_box {
+  width: 99.9%;
+  height: 91.5vh;
+  display: flex;
+}
+
+.main_box1 {
+  width: 70%;
+  height: 100%;
+  padding: 40px 5px 10px 50px;
+  overflow: scroll;
+}
+
+.main_box2 {
+  width: 30%;
+  height: 89%;
+  overflow: scroll;
+}
+
+.cold_play {
+  width: 99%;
+  height: 320px;
+  background-color: var(--transparentMainColor);
+  display: flex;
+}
+
+.photo {
+  width: 35%;
+  height: 100%;
+  background-image: url("./assests/secondPage/mainImage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo_description {
+  width: 65%;
+  height: 100%;
+  padding: 30px 15px;
+  overflow: scroll;
+}
+
+.band_description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.band_name {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.band_followers {
+  color: gray;
+  font-size: 15px;
+}
+
+.detail {
+  margin-top: 5px;
+  font-size: 13px;
+  text-align: justify;
+}
+
+.follow_box {
+  display: flex;
+  justify-content: space-between;
+  margin: 35px 0px 20px;
+}
+
+.follow_box button {
+  outline: none;
+  width: 90px;
+  padding: 5px;
+  font-size: 15px;
+  color: var(--colorWhite);
+  background: linear-gradient(to right, slateblue, purple);
+  border: none;
+  border-radius: 2px;
+  font-weight: bolder;
+  box-shadow: 0px 0px 5px 1px var(--colorWhite);
+}
+
+.follow_coldplay {
+  padding-right: 60px;
+}
+
+.all_playlist {
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 99%;
+  height: 40%;
+  overflow: scroll;
+}
+
+.palylists {
+  width: 100%;
+  height: 72px;
+  background-color: #202439;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color: gray;
+  border-radius: 5px;
+}
+
+.playlists1 {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.playlist_image {
+  height: 60px;
+  width: 60px;
+  background-image: url("./assests/secondPage/songImage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  transition: 1s ease-in-out;
+}
+
+.playlist_image::before {
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: ">";
+  font-size: 35px;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px 1px var(--colorWhite);
+}
+
+.playlist_image:hover::before {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: var(--colorWhite);
+}
+
+.playlist_image:hover {
+  transform: scale(1.1);
+}
+
+.playlist_song_name div:nth-child(1) {
+  color: var(--colorWhite);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.playlist_song_name div:nth-child(2) {
+  font-size: 15px;
+}
+
+.plalists2 {
+  display: flex;
+  justify-content: space-around;
+  width: 15%;
+}
+
+.player_copy {
+  width: 100%;
+  height: 75px;
+  background-color: var(--playerColor);
+  position: fixed;
+  z-index: 3;
+  top: 90.5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.div1,
+.div2 {
+  width: 85%;
+  height: 46%;
+  /* border: 1px solid yellow; */
+  overflow: scroll;
+  margin: 20px 35px 10px 5px;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.intro div:nth-child(1) {
+  font-size: 28px;
+}
+
+.intro div:nth-child(2) {
+  color: gray;
+  font-size: 15px;
+}
+
+.right_song_copy {
+  margin: 10px;
+}
+
+.right_song_copy .right_song_left_section .image_right_song {
+  background-image: url("./assests/secondPage/similar_artist.jpg");
+  height: 70px;
+  width: 70px;
+}
+
+.right_song_copy .right_song_left_section .image_right_song::before {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .playlists1 {
+    width: 40%;
+  }
+  .plalists2 {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 677px) {
+  .playlists1 {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 405px) {
+  .playlists1 {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .main_box2 {
+    display: none;
+  }
+
+  .main_box1 {
+    width: 100%;
+  }
+}

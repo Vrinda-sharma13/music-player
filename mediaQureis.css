@@ -1,0 +1,39 @@
+/* All the media queries that I have included in this project */
+@media screen and (max-width: 625px) {
+  .small-icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .searchbar,
+  .fovorite {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 887px) {
+  .right_section {
+    display: none;
+  }
+
+  .left_section {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .volume {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 518px) {
+  .icon:nth-child(1),
+  .icon:nth-child(5) {
+    display: none;
+  }
+  .playerHeart {
+    display: none;
+  }
+}
